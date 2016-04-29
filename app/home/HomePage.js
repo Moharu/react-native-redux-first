@@ -5,8 +5,7 @@ import actions from 'actions';
 
 function mapStateToProps(state) {
     return {
-        counter: state.counter,
-        openProfile: actions.router.profilePage
+        counter: state.counter
     }
 }
 
@@ -15,4 +14,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
-
